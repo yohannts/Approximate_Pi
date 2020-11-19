@@ -11,8 +11,7 @@ import simulator as s
 Point = namedtuple('Point','x y')
 
 if len(sys.argv)<4:
-    print("La commande d'execution du programme s'écrit < ",
-    "./approximate_pi.py Taille_image nombre_de_points nombre_chiffre_apres_virgule >")
+    raise AttributeError
 else :
     Taille = int(sys.argv[1])
     n = int(sys.argv[2])
@@ -20,6 +19,7 @@ else :
     if VIRGULE > 25:
         print("Il y a trop de zero à afficher, la limite est 25")
         VIRGULE = 25
+
 def transfo_dimension(point):
     """
     Permet de transformer des points de [-1,1] en des points
@@ -68,6 +68,8 @@ def generate_ppm_file(numero_image,listpi,listepnt,rawcont):
             strcontent += content[coordy][coordx]
         strcontent += '\n'
     image.write(strcontent)
+    subprocess.call(f"convert  img{numero_image}_3-{decimal_de_pi[1:]}.ppm "
+    +f"img{numero_image}_3-{decimal_de_pi[1:]}.ppm", shell=True)
     return rawcontent
 
 def affichage_nombre(decimal_de_pi,rawcont):
