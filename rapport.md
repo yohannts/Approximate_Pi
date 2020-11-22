@@ -1,10 +1,6 @@
 # <span style="color:grey"> Rapport Projet BPI </span>
 
 ##### <span style="color:grey"> TOURDES Yohann Ensimag 1A Groupe 6</span>
-<center>
-<img src="debut_11.png" alt="début" style="display:inline-block;" />
-<img src="fin_11.png" alt="fin" style="display:inline-block;" />
-</center>
 
 ---
 
