@@ -12,8 +12,8 @@ Point = namedtuple('Point','x y')
 
 if len(sys.argv)<4:
     raise AttributeError
-Taille = int(sys.argv[1])
-n = int(sys.argv[2])
+Taille = int(sys.argv[2])
+n = int(sys.argv[1])
 VIRGULE = int(sys.argv[3])
 if VIRGULE > 25:
     print("Il y a trop de zero à afficher, la limite est 25")
