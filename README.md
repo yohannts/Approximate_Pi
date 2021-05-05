@@ -5,5 +5,6 @@ I have added a commentary about the algorithm in french.
 
 ###### Project made in a scholar context
 
-- [] Coucou
-- [] Oui
+- [ ] Coucou
+- [ ] Oui
+ 
